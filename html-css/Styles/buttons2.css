@@ -1,0 +1,67 @@
+
+.page {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: opacity 0.25s, background-color 0.25s;
+
+}
+.page:hover{
+    background-color: lightgreen;
+    opacity: 0.5;
+}
+.stretch {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+    transition: padding-left 0.25s, padding-right 0.25s, padding-top 0.25s, padding-botton 0.25s;
+}
+.stretch:active {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.shawdow{
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+.shawdow:active{
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+}
+.one {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    transition: margin-left 0.25s, margin-right 0.25s;
+
+}
+.one:active{
+    margin-left: 10px;
+    margin-right: 10px;
+}

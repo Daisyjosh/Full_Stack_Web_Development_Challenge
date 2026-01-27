@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Animation In CSS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .font {
+                background-color: pink;
+                height: 100px;
+                width: 300px;
+                margin: 50px;
+
+
+                animation-name: FontAnimation;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-delay: 0;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+
+            } 
+            @keyframes FontAnimation {
+                from{font-size: 15px;}
+                to{font-size: 30px;}
+            }
+
+            .color {
+                background-color: pink;
+                height: 100px;
+                width: 300px;
+                margin: 50px;
+
+
+                animation-name: ColorAnimation;
+                animation-duration: 0.2s;
+                animation-timing-function: ease-in;
+                animation-delay: 0;
+                animation-iteration-count: infinite;
+                animation-direction: normal;
+
+            } 
+            @keyframes ColorAnimation {
+                from{background-color: pink}
+                to{background-color: lightblue;}
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="font">
+            <p>
+                This is a Font animation
+            </p>
+        </div>
+
+        <div class="color">
+            <p>This is a color animation</p>
+        </div>
+
+
+    </body>
+</html>

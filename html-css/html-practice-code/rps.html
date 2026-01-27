@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper Scissor✂️</title>
+    <style>
+        body{
+            background-color: cornflowerblue;        }
+
+        h1{
+            text-align: center;
+            width: 100%;
+
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #header{
+            display: flex;
+            width: 100%;
+            background-color: palegoldenrod;
+            color: black;
+
+            height: 10vh;
+            margin-left: 10px;
+            margin-right: 10px ;
+            
+
+        }
+        #choice{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: larger;
+            width: 100%;
+        }
+        button{
+
+            width: 100px;
+            background-color: azure;
+            height: 5vh;
+            border-radius: 20px;
+        }
+        .choices{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .image{
+            display: flex;
+            align-content: end;
+            justify-content: end;
+            width: 100%;
+            padding-right: 100px;
+            
+
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 10px;
+        }
+        li img{
+
+            width: 400px;
+            height: auto;
+        }
+
+
+
+        
+        li{
+            list-style: none;
+        }
+
+        #result{
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        @media (max-width: 400px){
+            h1{
+                font-size: smaller;
+            }
+            #header{
+                display: flex;
+                width: 200px;
+                height: 5vh;
+
+            }
+            .class{
+                display: flex;
+                width: 200px;
+            }
+            ul{
+                display: flex;
+                width: auto;
+            }
+            .choices{
+                display: flex;
+                width: auto;
+            }
+            li img{
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>ROCK PAPER SCISSOR</h1>
+    </div>
+    
+    <h3 id="choice">Choose your choice:</h3>
+    <div class="image">
+        <ul>
+            <li>
+                <div id="rock"><img src="images/rock.jpg" alt="Rock Image"></div>
+            </li>
+            <li>
+                <div id="paper">
+                    <img src="images/paper.jpg" alt="Paper Image">
+                </div>
+            </li>
+            <li>
+                <div id="scissor">
+                    <img src="images/scissor.jpg" alt="scissor image">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="choices">
+        <button onclick="play('Rock')">Rock🪨</button>
+        <button onclick="play('Paper')">Paper📃</button>
+        <button onclick="play('scissor')">Scissor✂️</button>
+    </div>
+    <br>
+    <div id="result">
+    </div>
+    <script>
+        function play(player){
+            const choices = ['rock','paper','scissor'];
+            let computer = choices[Math.floor(Math.random()*3)];
+            let result = '';
+            if(player === computer){
+                console.log(computer);
+                result = "draw🥺🥺";
+            }
+            else if((player === 'rock') && (computer === 'scissor')|| (player === "scissor") && (computer === 'paper') || (player === 'paper') && (computer === 'rock')){
+                console.log(computer);         
+                result = 'You win😊😊😊';
+            }
+            else{
+                console.log(computer);
+                result = 'You lose🤣🤣🤣🤣😂😂😂';
+            }
+            document.getElementById("result").innerHTML = `Computer chose: ${computer} <br> ${result}`;
+
+        }
+    </script>
+</body>
+</html>

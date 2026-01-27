@@ -1,0 +1,279 @@
+ <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FlexBox Practice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .main-box {
+                display: flex;
+                flex-direction: column;
+                height: 125px;
+                border-width: 3px;
+                border-style: solid;
+                border-color: grey;
+            }
+            .vertical {
+                color: black;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            .number {
+                background-color: rgb(60, 160, 222);
+                width: 25px;
+                border-radius: 25px;
+                text-align: center;
+                margin-right: 10px;
+                color: white;
+            }
+            .content {
+                font-weight: bold;
+
+            }
+            p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+            }
+
+            .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+            }
+
+            .profile-picture {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-right: 15px;
+            }
+
+            .info {
+            width: 200px;
+            }
+
+            .name {
+            font-weight: bold;
+            margin-bottom: 3px;
+            }
+
+            .handle {
+            color: rgb(150, 150, 150);
+            margin-bottom: 5px;
+            }
+
+            .category {
+            color: rgb(150, 150, 150);
+            font-size: 14px;
+            }
+
+            .follow-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+
+        </style>
+    </head>
+    <body style="padding-bottom: 1000px;">
+        <div style="
+            display: flex;
+            flex-direction: row;
+            ">
+            <div style="background-color: lightblue;">div1</div>
+            <div style="background-color: lightpink;">div2 <p>Text</p></div>
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            ">
+            <div style="background-color: lightblue; width: 100px;">100px</div>
+            <div style="background-color: lightpink; flex: 1;">flex1</div>
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            ">
+            <div style="background-color: lightblue; width: 100px;">100px</div>
+            <div style="background-color: lightpink; flex: 1;">flex1</div>
+            <div style="background-color: lightblue; flex: 2;">flex2</div>
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: grey;
+            justify-content: center;
+            ">
+            <div style="background-color: lightpink; width: 100px;">100px</div>
+            <div style="background-color: lightblue; width: 100px;">100px</div>
+            <div style="background-color: lightpink; width: 100px;">100px</div>
+        </div>
+
+
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: grey;
+            justify-content: space-between;
+            ">
+            <div style="background-color: lightpink; width: 100px;">100px</div>
+            <div style="background-color: lightblue; width: 100px;">100px</div>
+            <div style="background-color: lightpink; width: 100px;">100px</div>
+        </div>
+
+        <div style="
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            height: 70px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: grey;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 50px;
+            ">
+            <div style="background-color: lightpink; width: 100px;">100px</div>
+            <div style="background-color: lightblue; width: 100px;">100px</div>
+            <div style="background-color: lightpink; width: 100px;">100px</div>
+        </div>
+
+        <h1>Excersises</h1>
+        <p>12a. Create a flexbox with 2 items. Widths = 200px | 75px</p>
+        <div style=" 
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        ">
+            <div style="background-color: lightblue; width: 200px;">200px</div>
+            <div style="background-color: lightpink; width: 75px;">75px</div>
+        </div>
+        <p>12b. A flexbox with 3 items. Widths = 50px | remaining sace | 75px</p>
+        <div style="
+        display: flex;
+        flex-direction: row;">
+            <div style="background-color: lightblue; width: 50px;">item1</div>
+            <div style="background-color: lightpink; flex: 1;">item2</div>
+            <div style="background-color: lightblue; width: 75px;">item3</div>
+        </div>
+
+        <p>12c. A flexbox with 4 items, spread evenly across the page</p>
+        <div
+        style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;">
+            <div style="background-color: lightblue; width: 50px;">item1</div>
+            <div style="background-color: lightpink; width: 50px;">item2</div>
+            <div style="background-color: lightblue; width: 50px;">item3</div>
+            <div style="background-color: lightpink; width: 50px;">item4</div>        
+        </div>
+        <p>12d. Create the flexbox below with height = 50px and a gray border</p>
+        <div style="
+        display: flex;
+        flex-direction: row;
+        border-width: 3px;
+        border-style: solid;
+        border-color: grey;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;">
+            <div style="background-color: lightblue;">
+                item1
+            </div>
+            <div style="background-color: lightpink;">
+                item2
+            </div>
+        </div>
+        <p>12e. Create this design</p>
+        <div class="main-box">
+            <div class="vertical">
+                <div class="content"> Home
+                </div>
+                <div class="number">
+                    14
+                </div>
+            </div>
+            <div class="vertical">
+                <div class="content">
+                    Notifications
+                </div>
+                <div class="number">
+                    3
+                </div>
+            </div>
+            <div class="vertical">
+                <div class="content">
+                    Messages
+                </div>
+                <div class="number">
+                        5
+                </div>
+            </div>
+        </div>
+        
+        <p>12g</p>
+        <div class="row">
+            <img class="profile-picture" src="images/first.jpg">
+            <div class="info">
+                <p class="name">oliver</p>
+                <p class="handle">the cat</p>
+                <p class="category">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+
+        <div class="row">
+            <img class="profile-picture" src="images/second.jpg">
+            <div class="info">
+                <p class="name">Mimi</p>
+                <p class="handle">Sleepy Cat</p>
+                <p class="category">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+
+        <div class="row">
+            <img class="profile-picture" src="images/third.jpg">
+            <div class="info">
+                <p class="name">Rex</p>
+                <p class="handle">Happy Bulldog</p>
+                <p class="category">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+        </div>
+
+    </body>
+</html>

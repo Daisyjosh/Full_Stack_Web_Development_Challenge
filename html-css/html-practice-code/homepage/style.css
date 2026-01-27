@@ -1,0 +1,105 @@
+.top{
+    color: white;
+    background-color: navy;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.left{
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+    
+}
+
+li{
+    list-style: None;
+}
+.next_top{
+    display: flex;
+    align-items: start;
+    color: white;
+    background-color: navy;
+}
+
+#p1{
+    display: flex;
+    background-color: navy;
+    width: 400px;
+
+    font-size: larger;
+    margin-left: 30px;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: start;
+}
+
+#p2{
+    display: flex;
+
+    background-color: navy;
+    width: 400px;
+    margin-left: 30px;
+    align-items: start;
+}
+
+#signup{
+    color: white;
+    padding: 20px;
+    font-size: x-small;
+    background-color: lightskyblue;
+    display: flex;
+    height: 1vh;
+    width: 100px;
+    justify-content: end;
+    justify-content: space-evenly;
+    border-radius: 10px;    
+}
+
+#img{
+    justify-content: space-around;
+    justify-content: center ;
+    background-color: grey;
+    display: flex;
+    width: 400px;
+    height: 30vh;
+    margin : 100px;
+    text-align: center;
+
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    height: 10vh;
+    margin-top: 0%;
+    justify-content: end;
+    align-items: start;
+    justify-content: space-evenly;
+
+
+}
+
+
+.container div{
+    display: flex;
+    width: 100px;
+    height: 10vh;
+    background-color: white;
+    border: 2px solid navy;
+    justify-content: space-around;
+    justify-content: center;
+    border-radius: 30px;
+   
+}
+
+.big{
+    display: flex;
+    margin: 200px;
+    margin-left: 0px;
+    height: 20vh;
+    width: 100%;
+    background-color: grey;
+}
+
