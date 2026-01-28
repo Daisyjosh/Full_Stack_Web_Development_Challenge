@@ -64,5 +64,19 @@ z--;
 --z;
 
 
+// comparator or relational operator
+
+console.log(8 > 10); // false
+console.log(8 < 10); // true 
+n = 5
+s ='5'
+console.log(n==s) // true
+console.log(n===s) // false 
 
 
+// logical Operators
+
+console.log(true&&true); // true
+console.log(false&&true); // false
+console.log(true||false); // true
+console.log(true!=false); // true
